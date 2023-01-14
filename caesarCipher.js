@@ -6,7 +6,7 @@ const asciiCodeToChar = (arr) => {
   return arr.map(code => String.fromCharCode(code))
 }
 
-const caesarChiper = (str, key) => {
+const caesarCipher = (str, key) => {
   const charArr = str.split('')
   const charCode = charToAsciiCode(charArr)
 
@@ -29,4 +29,4 @@ const caesarChiper = (str, key) => {
   return encryptedArr.join('')
 }
 
-export { caesarChiper }
+export { caesarCipher }
